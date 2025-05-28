@@ -4,5 +4,6 @@ function New-VMConfig {
         [int]$CPU,
         [int]$RAM,
         [int]$Disk,
-        [strin]$ISO
+        [string]$ISO
     )
+}
