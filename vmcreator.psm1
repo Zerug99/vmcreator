@@ -6,4 +6,12 @@ function New-VMConfig {
         [int]$Disk,
         [string]$ISO
     )
+    try {
+        $vmPath = "$env:VM_FOLDER\$Name"
+        New-Item -ItemType Directory -Path $vmPath -Force
+        
+    }
+    catch {
+        
+    }
 }
