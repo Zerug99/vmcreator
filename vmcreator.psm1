@@ -9,6 +9,8 @@ function New-VMConfig {
     try {
         $vmPath = "$env:VM_FOLDER\$Name"
         New-Item -ItemType Directory -Path $vmPath -Force Out-Null
+
+        $vmxPath = "$vmPath\$Name.vmx"
         
     }
     catch {
