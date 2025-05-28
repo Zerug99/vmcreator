@@ -46,3 +46,27 @@ function New-VMConfig {
         throw "Misslyckades med att skapa VM-konfiguration: $_"
     }
 }
+
+function Start-VM {
+    param ([string]$Name)
+    $vmxPath = "$env:VM_FOLDER\$Name\$Name.vmx"
+    & $env:VMRUN_PATH start $vmxPath nogui
+
+
+    # Öppna även i Workstation GUI för att synas i listan
+    Start-Sleep -Seconds 1
+    & $env:VMWARE_GUI_PATH $vmxPath
+    Write-Log -Message "VM '$Name' öppnades i VMware GUI."
+}
+
+
+function Write-Log {
+    param ([string]$Message)
+    $logPath = "$PSScriptRoot\vm_log.txt"
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logEntry = "$timestamp`t$Message"
+    $logEntry | Add-Content -Path $logPath
+    Write-Output $logEntry
+}
+
+# Den sista funktionen är för att skriva ett logg på där vm skapades och ange vms namn bland annat 
