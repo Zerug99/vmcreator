@@ -4,4 +4,4 @@ Get-Content .env | ForEach-Object {
     }
 }
 
-Import-Module "$PSScriptRoot\vmceator.psm1" -Force
+Import-Module "$PSScriptRoot\vmcreator.psm1" -Force
