@@ -37,7 +37,10 @@ function New-VMConfig {
         )
 
         $vmxContent | Set-Content -Path $vmxPath -Encoding UTF8
-        
+
+        Push-Location $vmPath
+        & $env:VMWARE_VDISKMANAGER -c -s ${Disk}GB -a lsilogic -t 0 "$Name.vmdk"
+        Pop-Location
     }
     catch {
         
