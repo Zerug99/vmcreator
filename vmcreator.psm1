@@ -43,6 +43,6 @@ function New-VMConfig {
         Pop-Location
     }
     catch {
-        
+        throw "Misslyckades med att skapa VM-konfiguration: $_"
     }
 }
