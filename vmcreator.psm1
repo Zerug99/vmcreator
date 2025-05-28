@@ -50,11 +50,11 @@ function New-VMConfig {
 function Start-VM {
     param ([string]$Name)
     $vmxPath = "$env:VM_FOLDER\$Name\$Name.vmx"
-    & $env:VMRUN_PATH  $vmxPath nogui
+    & $env:VMRUN_PATH start $vmxPath nogui
 
 
     # Öppna även i Workstation GUI för att synas i listan
     Start-Sleep -Seconds 1
     & $env:VMWARE_GUI_PATH $vmxPath
-    Write-Log  "VM '$Name' öppnades i VMware GUI."
+    Write-Log -Message "VM '$Name' öppnades i VMware GUI."
 }
