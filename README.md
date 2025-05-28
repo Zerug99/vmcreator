@@ -16,10 +16,10 @@ Scriptet frågar användare om parametrar som behövs till .vmx-filen och vmware
 - Iso fil t.ex. windows 10 
 - .env fil med sökvägar 
 sökvägen där vms ska sparas 
-sökvägen till vmware-vdiskmanager.exe
-sökvägen till vmrun.exe
-Sökvägen till vmware.exe
-Dessa hittas i VMware Workstation
+sökvägen till vmware-vdiskmanager.exe,
+sökvägen till vmrun.exe,
+Sökvägen till vmware.exe,
+Dessa hittas i VMware Workstation.
 
 - Kör main.ps1 och fyll i det som frågas efter.
 
