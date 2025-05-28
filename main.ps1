@@ -9,6 +9,7 @@ Get-Content .env | ForEach-Object {
 Import-Module "$PSScriptRoot\vmcreator.psm1" -Force
 
 # Ber användaren om att ange information som behövs för att skapa en ny VM
+# Detta kommer att synas för användaren i PowerShell-konsolen
 $vmName = Read-Host "Ange namn på VM"
 $cpuCount = Read-Host "Ange antal CPU-kärnor"
 $ramSize = Read-Host "Ange RAM i MB"
@@ -25,6 +26,7 @@ try {
     Write-Log -Message "Fel vid skapande av VM: $_"
     Write-Error $_
 }
+
 
 
 
