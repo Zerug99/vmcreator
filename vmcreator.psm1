@@ -35,6 +35,8 @@ function New-VMConfig {
             "pciBridge4.functions = ""8""",
             "tools.syncTime = ""TRUE"""
         )
+
+        $vmxContent | Set-Content -Path $vmxPath -Encoding UTF8
         
     }
     catch {
