@@ -59,6 +59,7 @@ function Start-VM {
     Write-Log -Message "VM '$Name' öppnades i VMware GUI."
 }
 
+
 function Write-Log {
     param ([string]$Message)
     $logPath = "$PSScriptRoot\vm_log.txt"
@@ -67,3 +68,5 @@ function Write-Log {
     $logEntry | Add-Content -Path $logPath
     Write-Output $logEntry
 }
+
+# Den sista funktionen är för att skriva ett logg på där vm skapades och ange vms namn bland annat 
