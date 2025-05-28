@@ -7,8 +7,10 @@ Get-Content .env | ForEach-Object {
 Import-Module "$PSScriptRoot\vmcreator.psm1" -Force
 
 $vmName = Read-Host "Ange namn på VM"
-$cpCount = Read-Host "Ange antal CPU-kärnor"
+$cpuCount = Read-Host "Ange antal CPU-kärnor"
 $ramSize = Read-Host "Ange RAM i MB"
 $diskSize = Read-Host "Ange hårddiskstorlek i GB"
-$isoPah = Read-Host "Ange sökväg till ISO-fil"
+$isoPath = Read-Host "Ange sökväg till ISO-fil"
+
+
 
