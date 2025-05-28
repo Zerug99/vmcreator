@@ -5,7 +5,7 @@ Get-Content .env | ForEach-Object {
     }
 }
 
-# importera moduler från vmcreator
+# Importera moduler från vmcreator
 Import-Module "$PSScriptRoot\vmcreator.psm1" -Force
 
 # Ber användaren om att ange information som behövs för att skapa en ny VM
