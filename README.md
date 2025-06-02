@@ -28,5 +28,5 @@ Dessa hittas i VMware Workstation.
 Gruppen ville skapa något som man kan ha nytta av och som man har lärt sig genom utbildningens gång och bygga på det.
 Gruppen tyckte att det var häftigt att kunna styra ett program genom PowerShell och skippa göra det manuellt. 
 Skapa ett ordenligt struktur för kodingen var nycklen till att hålla koden organiserat och göra felsökningen enkel tycker gruppen.
-Det svåra var att hitta vilka parametrar som är viktiga att ta med pch alla paths. Man fick inte glömma att inte gita upp känslig information och vi använde gitignore.
+Det svåra var att hitta vilka parametrar som är viktiga att ta med och alla paths. Man fick inte glömma att inte gita upp känslig information och vi använde gitignore.
 Vi skapade flera bracnhes och löste alla merges.
