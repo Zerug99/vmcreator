@@ -15,10 +15,10 @@ Scriptet frågar användare om parametrar som behövs till .vmx-filen och vmware
 - Vmware Workstation Pro 
 - Iso fil t.ex. windows 10 
 - .env fil med sökvägar:
-- VM_FOLDER – Sökvägen där virtuella maskiner (VM) kommer att sparas.
-- VMWARE_VDISKMANAGER – Pekar på verktyget vmware-vdiskmanager.exe som används för att skapa och hantera virtuella hårddiskar.
-- VMRUN_PATH – ska peka på vmrun.exe, ett kommandoverktyg för att t.ex. starta, stoppa och hantera VM:er via script.
-- VMWARE_GUI_PATH – Pekar på vmware.exe, själva användargränssnittet för VMware Workstation Pro.
+- VM_FOLDER=Sökvägen där virtuella maskiner (VM) kommer att sparas.
+- VMWARE_VDISKMANAGER=Pekar på verktyget vmware-vdiskmanager.exe som används för att skapa och hantera virtuella hårddiskar.
+- VMRUN_PATH=ska peka på vmrun.exe, ett kommandoverktyg för att t.ex. starta, stoppa och hantera VM:er via script.
+- VMWARE_GUI_PATH=Pekar på vmware.exe, själva användargränssnittet för VMware Workstation Pro.
 
 
 
